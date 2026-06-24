@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    h1>Formulario Computer</h1>
+    <h1>Formulario Computer</h1>
 
     <form action="{{route('computer.store')}}" method="POST" enctype="multipart/form-data">
 
