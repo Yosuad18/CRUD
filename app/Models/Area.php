@@ -9,8 +9,8 @@ class Area extends Model
 {
     use HasFactory;
 
-    public function training_centers() {
-        return hasMany('App/Models/training_center');
+    public function courses() {
+        return hasMany('App/Models/Course');
     }
 
     public function teachers() {

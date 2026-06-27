@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Computer extends Model
+class Course_teacher extends Model
 {
     use HasFactory;
-
-    public function apprentice() {
-        return hasOne('App/Models/Aprendiz');
-    }
 }
