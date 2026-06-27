@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Area extends Model
 {
     use HasFactory;
+
+    public function training_centers() {
+        return hasMany('App/Models/training_center');
+    }
+
+    public function teachers() {
+        return hasMany('App/Models/Teachers');
+    }
 }
