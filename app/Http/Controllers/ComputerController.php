@@ -7,8 +7,6 @@ use App\models\Computer;
 
 class ComputerController extends Controller
 {
-
-
     public function create (){
      return view('computer.create');
 
