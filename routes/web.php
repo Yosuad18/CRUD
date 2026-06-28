@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConsultasController;
 use App\Http\Controllers\ComputerController;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\CourseController;
@@ -20,6 +21,7 @@ use App\Http\Controllers\TrainingCenterController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('consultas',[ConsultasController::class,'consulta']);
 
 Route::get('area/create',[AreaController::class,'create']);
 Route::post('area/store',[AreaController::class,'store'])->name('area.store');
@@ -38,8 +40,3 @@ Route::post('course/store',[CourseController::class,'store'])->name('course.stor
 
 Route::get('teacher/create',[TeacherController::class,'create']);
 Route::post('teacher/store',[TeacherController::class,'store'])->name('teacher.store');
-
-
-
-
-
