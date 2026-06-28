@@ -3,31 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crear Computer</title>
+    <title>Crear Curso</title>
 </head>
 <body>
-    <h1>Formulario Computer</h1>
 
-    <form action="{{route('computer.store')}}" method="POST" enctype="multipart/form-data">
+<h1>formulario Curso</h1>
+
+<form action="{{route('course.store')}}" method="POST" enctype="multipart/form-data">
 
 @csrf
 
 <label>
     Number:
     <br>
-    <input type="number" name="number">
+    <input type="text" name="course_number">
 </label>
-<br>
 <label>
-    Brand:
+    Dia:
     <br>
-    <input type="text" name="brand">
+    <input type="text" name="day">
 </label>
 <br>
 <br>
 
 
-<button type="submit">Crear Computador:</button>
+
+<button type="submit">Enviar Formulario:</button>
 </form>
 
 </body>
