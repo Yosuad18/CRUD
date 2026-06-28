@@ -16,4 +16,8 @@ class Teacher extends Model
     public function training_center() {
         return belongsTo('App/Models/training_center');
     }
+
+    public function courses(){
+        return belongsToMany('App/Models/Course');
+    }
 }

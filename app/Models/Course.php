@@ -20,4 +20,8 @@ class Course extends Model
     public function training_center() {
         return belongsTo('App/Models/training_center');
     }
+
+    public function teachers(){
+        return belongsToMany('App/Models/Teacher');
+    }
 }
