@@ -10,11 +10,11 @@ class Apprentice extends Model
     use HasFactory;
 
     public function computer() {
-        return hasOne('App/Models/Computer');
+        return $this->hasOne('App/Models/Computer');
     }
 
     public function course() {
-        return belongsTo('App/Models/Course');
+        return $this->belongsTo('App/Models/Course');
     }
     
 }

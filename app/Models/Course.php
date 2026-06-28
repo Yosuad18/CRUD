@@ -10,18 +10,18 @@ class Course extends Model
     use HasFactory;
 
     public function area() {
-        return belongsTo('App/Models/Area');
+        return $this->belongsTo('App/Models/Area');
     }
 
     public function apprentices() {
-        return hasMany('App/Models/Apprentice');
+        return $this->hasMany('App/Models/Apprentice');
     }
 
     public function training_center() {
-        return belongsTo('App/Models/training_center');
+        return $this->belongsTo('App/Models/training_center');
     }
 
     public function teachers(){
-        return belongsToMany('App/Models/Teacher');
+        return $this->belongsToMany('App/Models/Teacher');
     }
 }

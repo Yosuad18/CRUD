@@ -10,10 +10,10 @@ class Area extends Model
     use HasFactory;
 
     public function courses() {
-        return hasMany('App/Models/Course');
+        return $this->hasMany('App/Models/Course');
     }
 
     public function teachers() {
-        return hasMany('App/Models/Teachers');
+        return $this->hasMany('App/Models/Teachers');
     }
 }

@@ -10,6 +10,6 @@ class Computer extends Model
     use HasFactory;
 
     public function apprentice() {
-        return hasOne ('App/Models/Aprendiz');
+        return $this->hasOne ('App/Models/Aprendiz');
     }
 }

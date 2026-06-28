@@ -10,14 +10,14 @@ class Teacher extends Model
     use HasFactory;
 
     public function area() {
-        return belongsTo('App/Models/Area');
+        return $this->belongsTo('App/Models/Area');
     }
 
     public function training_center() {
-        return belongsTo('App/Models/training_center');
+        return $this->belongsTo('App/Models/training_center');
     }
 
     public function courses(){
-        return belongsToMany('App/Models/Course');
+        return $this->belongsToMany('App/Models/Course');
     }
 }
