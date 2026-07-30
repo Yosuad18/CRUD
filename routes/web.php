@@ -40,3 +40,8 @@ Route::post('course/store',[CourseController::class,'store'])->name('course.stor
 
 Route::get('teacher/create',[TeacherController::class,'create']);
 Route::post('teacher/store',[TeacherController::class,'store'])->name('teacher.store');
+
+
+Route::get('computer/{computer}/edit',[ComputerController::class,'edit'])->name('computer.edit');
+Route::put('computer/{computer}',[ComputerController::class,'update'])->name('computer.update');
+Route::delete('computer/{computer}',[ComputerController::class,'destroy'])->name('computer.destroy');
